@@ -12,5 +12,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Message that will be displayed on users first issue'
-        pr-message: 'Message that will be displayed on users first pull request'
+        issue-message: 'Thank You for opening an issue. These help us make The big6 Project better.'
+        pr-message: 'Thank You for creating a pull request. These motivate us that the community is with us to help. Thanks again for your first contribution towards The big6 Project.'
