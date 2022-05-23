@@ -18,7 +18,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pylint
-        pip install -r big6/requirements.txt
+        cd big6
+        pip install pylint-django
+        pip install -r requirements.txt
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py') --load-plugins pylint_django --django-settings-module=big6.settings
