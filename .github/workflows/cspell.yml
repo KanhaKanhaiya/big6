@@ -8,4 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
       - uses: streetsidesoftware/cspell-action@v1
+        with:
+          incremental_files_only: false
