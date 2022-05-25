@@ -1,0 +1,38 @@
+.btn-gradient {
+    position: relative;
+    color: #fff;
+    background-image: linear-gradient(60deg, #1ac8ed, #71eead);
+    border-color: #8377d1;
+    z-index: 1;
+}
+
+.btn-gradient::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(60deg, #f4d1ae, #8377d1);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.btn-gradient:hover::before {
+    opacity: 1;
+}
+
+.btn-gradient:hover {
+    color: #fff;
+    border-color: #8377d1;
+}
+
+.btn-gradient:focus {
+    color: #fff;
+    border-color: #8377d1;
+}
+
+.navbar {
+    background-color: #e3fff9;
+}
