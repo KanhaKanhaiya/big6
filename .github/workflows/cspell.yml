@@ -4,12 +4,18 @@ on: # rebuild any PRs and main branch changes
   push:
   workflow_dispatch:
 
+env:
+  FORCE_COLOR: 2
+  NODE: 16
+
 jobs:
   spellcheck: # run the action
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Clone repository
+        uses: actions/checkout@v3
       
-      - uses: streetsidesoftware/cspell-action@v1
+      - name: cspell-action
+        uses: streetsidesoftware/cspell-action@v2.0.0
         with:
           incremental_files_only: false
