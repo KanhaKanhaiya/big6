@@ -3,7 +3,7 @@ https://github.com/KanhaKanhaiya/big6
 
 This repository is Home to ***The big6 Project***.
 
-This repository **does not** contains source code. The source code is present in the following links :
+This repository **does not** contains source code. The source code is present in the following repositories :
 
 ### GitHub
 
