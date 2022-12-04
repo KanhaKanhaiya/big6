@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ cout<<"Enter the Number of whose table you want. "<<endl;
+ int n;
+ cin>>n;
+ cout<<"multiplication limit"<<endl;
+ int v;
+ cin>>v;
+ 
+ //Check
+ if(n<=100000)
+ {
+   for(int i=1;i<=v;i++)
+   {
+     cout<<n<<"×"<<i<<"="<<n*i<<endl;
+   }
+   
+ }
+ else
+ {
+  cout<<"ohhhhhhhhhjhhhhh";
+ }
+ return 0;
+}
